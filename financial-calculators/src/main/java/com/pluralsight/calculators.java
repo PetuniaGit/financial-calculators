@@ -26,22 +26,22 @@ public class calculators {
         double principal=scan.nextDouble();
         // Input Interest rate
         System.out.println("what is your interest rate?");
-        double interestrate =scan.nextDouble();
+        double interestRate =scan.nextDouble();
         //input loan length in years
         System.out.println("what is the loan length in years ");
-        double loanlength =scan.nextDouble();
+        double loanLength =scan.nextDouble();
         // calculate monthly interest rate
-        double monthlyinterestrate= interestrate/1200;
+        double monthlyInterestRate= interestRate/1200;
         //calculate totalmonth
-        double totalmonth=loanlength*12;
+        double totalMonth=loanLength*12;
         // calculate monthly payment
-        double monthlypayment=(principal*monthlyinterestrate*Math.pow(1+monthlyinterestrate,totalmonth))/(Math.pow(1+monthlyinterestrate,totalmonth)-1);
+        double monthlyPayment=(principal*monthlyInterestRate*Math.pow(1+monthlyInterestRate,totalMonth))/(Math.pow(1+monthlyInterestRate,totalMonth)-1);
         // calculate total interset paid
-        double totalinterest= monthlypayment*totalmonth-principal;
+        double totalInterest= monthlyPayment*totalMonth-principal;
 
         // display result
-        System.out.println("Your monthly payment is "+ monthlypayment);
-        System.out.println("your total interest paid is "+ totalinterest);
+        System.out.println("Your monthly payment is "+ String.format ("%.2f",monthlyPayment));
+        System.out.println("your total interest paid is "+ String.format ("%.2f",totalInterest));
 
     }
     public static void futurevalue(){
@@ -51,17 +51,17 @@ public class calculators {
 
         //  Input interest rate.
         System.out.print("what is the interest rate?");
-        double interestrate = scan.nextDouble();
+        double interestRate = scan.nextDouble();
 
         // Tell user to enter the length in years.
         System.out.print("Input the length in years: ");
-        int totallength = scan.nextInt();
+        int totalLength = scan.nextInt();
 
         // Calculate the monthly interest rate.
-        double monthlyInterestRate = interestrate / 1200;
+        double monthlyInterestRate = interestRate / 1200;
 
         // Convert years to months.
-        int totalMonths = totallength * 12;
+        int totalMonths = totalLength * 12;
 
         // Calculate future value.
         double futureValue = deposit * Math.pow(1 + monthlyInterestRate, totalMonths);
@@ -71,31 +71,31 @@ public class calculators {
 
         // Print out the information.
 
-        System.out.println("The Future Value is " + futureValue);
-        System.out.println("the Total Interest Earned is" + totalInterest);
+        System.out.println("The Future Value is " + String.format ("%.2f",futureValue));
+        System.out.println("the Total Interest Earned is " + String.format ("%.2f",totalInterest));
     }
     public static void presentvalue (){
         Scanner scan=new Scanner(System.in);
         // ask the user for monthly payout
         System.out.println("what is your monthly payout?");
-        double monthlypayout= scan.nextDouble();
+        double monthlyPayout= scan.nextDouble();
         // ask for expected interest rate
         System.out.println("what is the expected interest rate? ");
         double expectedInterest=scan.nextDouble();
         // ask the user for years to payout
         System.out.println("please enter the years to payout.");
-        double yearstopayout=  scan.nextDouble();
+        double yearsToPayout=  scan.nextDouble();
 
         //calculate monthly interest rate
 
-        double monthlyinterestrate=expectedInterest/1200;
+        double monthlyInterestrate=expectedInterest/1200;
 
         // convert to totalmonth
-        double totalmonth= yearstopayout*12;
+        double totalMonth= yearsToPayout*12;
         // calculate present value
-        double presentvalue= monthlypayout*(1-Math.pow(1+ monthlyinterestrate,-totalmonth))/monthlyinterestrate;
+        double presentValue= monthlyPayout*(1-Math.pow(1+ monthlyInterestrate,-totalMonth))/monthlyInterestrate;
 
-        System.out.println("The present value is"+ presentvalue);
+        System.out.println("The present value is"+ String.format ("%.2f",presentValue));
 
 
 
