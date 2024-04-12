@@ -1,7 +1,9 @@
-# financial-calculators![Screenshot (72)](https://github.com/PetuniaGit/financial-calculators/assets/120343363/27458029-2311-444d-abfd-e9807891be36)
-![Screenshot (72)](https://github.com/PetuniaGit/financial-calculators/assets/120343363/e7ebf584-bf5c-4f64-90ef-ca5e9bcfc675)
-![Screenshot (73)](https://github.com/PetuniaGit/financial-calculators/assets/120343363/b6bfd4b3-1716-458f-8a94-b63c963f0ede)
-![Screenshot (74)](https://github.com/PetuniaGit/financial-calculators/assets/120343363/ad591e07-47e9-4707-8855-06c2673532f2)
-![Screenshot (75)](https://github.com/PetuniaGit/financial-calculators/assets/120343363/5fbe60ec-a527-4f0f-b03b-d6a437ce28ba)
-double presentvalue= monthlypayout*(1-Math.pow(1+ monthlyinterestrate,-totalmonth))/monthlyinterestrate;
-// it is interesting because it combines math and coding.
+# financial-calculators
+![Screenshot 2024-04-12 162355](https://github.com/PetuniaGit/financial-calculators/assets/120343363/4594113b-31e4-49f9-85ea-f4de21d2e2f0)
+![Screenshot 2024-04-12 162426](https://github.com/PetuniaGit/financial-calculators/assets/120343363/5f426df0-e057-40b2-a423-ecce724e1b87)
+![Screenshot 2024-04-12 162452](https://github.com/PetuniaGit/financial-calculators/assets/120343363/338f90ec-44cb-4d02-8d99-4f6f54a0e49b)
+![Screenshot 2024-04-12 162525](https://github.com/PetuniaGit/financial-calculators/assets/120343363/4d98c8a6-e799-4e43-885d-df0ef3a4004d)
+
+
+One piece of code I find interesting is `double presentvalue= monthlypayout*(1-Math.pow(1+ monthlyinterestrate,-totalmonth))/monthlyinterestrate;`
+It is interesting because it combines math and coding logic. Using a combination of these makes it user-friendly and solves problems fast.
