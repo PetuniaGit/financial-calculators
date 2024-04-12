@@ -4,9 +4,20 @@ import java.util.Scanner;
 
 public class calculators {
     public static void main(String[] args) {
-
+         Scanner scan=new Scanner(System.in);
         System.out.println(" which calculator do you want to use ?");
+        System.out.println( "Input 1 for Mortgage calculator");
+        System.out.println(" Input 2 for future value calculator ");
+        System.out.println(" Input 3 for Present value calculator ");
+         double input= scan.nextDouble();
 
+         if (input==1){
+             mortgagecalculator();
+         }
+         else if(input==2){futurevalue();}
+         else if (input==3){presentvalue();}
+         else {
+             System.out.println("invalid input");}
     }
     public static void mortgagecalculator(){
         Scanner scan=new Scanner(System.in);
